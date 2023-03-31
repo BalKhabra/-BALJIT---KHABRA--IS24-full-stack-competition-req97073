@@ -26,7 +26,7 @@ const Edit = () => {
     getSingleUser(id);
     }
   }, [id])
-
+console.log(item, "item")
   //read the data
   useEffect(() => {
     const fetchItem = async () => {
@@ -56,14 +56,9 @@ const updateUser = async (data, id) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await axios.put(`http://localhost:3000/api/users/${id}`, item);
-    if(!name || !owner || !developers || !scrumMaster || !date || !methodology){
-      toast.error("Missing Value!")
-    } else {
-       if (!id) {
-            updateUser(state);
-       } 
-    setTimeout(() =>navigate(`/`), 500);
-    }
+   navigate(`/`);
+    
+    
 
   }
 
@@ -94,7 +89,7 @@ const updateUser = async (data, id) => {
         id="name" 
         name="name" 
         placeholder='Enter Product Name' 
-        onChange={handleInputChange} 
+        onChange={(e) => handleInputChange(e)} 
         value={item.name}
         />
 
@@ -103,7 +98,7 @@ const updateUser = async (data, id) => {
         id="owner" 
         name="owner" 
         placeholder='Enter Product Owner' 
-        onChange={handleInputChange} 
+        onChange={(e) => handleInputChange(e)} 
         value={item.owner}
         />
 
@@ -112,7 +107,7 @@ const updateUser = async (data, id) => {
         id="developers" 
         name="developers" 
         placeholder='Enter Developers' 
-        onChange={handleInputChange} 
+        onChange={(e) => handleInputChange(e)} 
         value={item.developers}
         />
 
@@ -121,7 +116,7 @@ const updateUser = async (data, id) => {
         id="scrumMaster" 
         name="scrumMaster" 
         placeholder='Enter Scrum Master' 
-        onChange={handleInputChange} 
+        onChange={(e) => handleInputChange(e)} 
         value={item.scrumMaster}
         />
 
@@ -129,6 +124,7 @@ const updateUser = async (data, id) => {
       type="date" 
       id="date" 
       name="date" 
+      onChange={(e) => handleInputChange(e)}
       className='bg-slate-300 pointer-events-none'
       placeholder='Enter Start Date' 
       value={item.date}
@@ -138,7 +134,7 @@ const updateUser = async (data, id) => {
       id="methodology"
       name="methodology"
       value={item.methodology}
-      onChange={handleInputChange}>
+      onChange={(e) => handleInputChange(e)}>
       <option value="">Choose Methodology</option>
       <option value="Agile"> Agile </option>
       <option value="Waterfall">Waterfall</option>

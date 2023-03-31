@@ -24,6 +24,8 @@ useEffect(() => {
   if (id) {
   getSingleUser(id);
   }
+
+  
 }, [id])
 
 useEffect(() => {
