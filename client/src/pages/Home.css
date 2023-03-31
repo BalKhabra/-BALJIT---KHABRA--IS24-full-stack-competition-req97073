@@ -1,0 +1,83 @@
+.styled-table {
+    border-collapse: collapse;
+    margin: auto;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    max-width: 990px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    
+}
+
+.table-striped-rows tr:nth-child(2n) td {
+    background-color: rgba(156, 147, 147, 0.15);
+}
+.table-striped-rows thead {
+    background-color: #f1f1f1;
+}
+
+.styled-table thead tr {
+    background-color: #202225 ;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.search-bar {
+    border-collapse: collapse;
+    margin: auto;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    max-width: 990px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15)
+}
+  
+.search-bar {
+    display: none;
+}
+  
+  .show-search .search-bar {
+    display: block;
+}
+  
+ 
+.btn {
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btn-edit {
+    background-color: #81a135;
+}
+
+.btn-delete {
+    background-color: #f44336;
+}
+
+.btn-view {
+    background-color: #9ed9db;
+    color: black;
+}
