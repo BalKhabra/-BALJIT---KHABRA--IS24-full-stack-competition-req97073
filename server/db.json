@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "name": "FizzE1234",
+      "name": "Fizz",
       "owner": "Sarah Hill",
       "developers": [
         "Jackson Wang",
@@ -12,9 +12,7 @@
         "Padma Loka"
       ],
       "scrumMaster": "Tony Bradshaw",
-      "date": [
-        "2022-08-08"
-      ],
+      "date": "2022-08-08",
       "methodology": "Agile"
     },
     {
@@ -29,9 +27,7 @@
         "Sienna Moe"
       ],
       "scrumMaster": "Ellen Kaler",
-      "date": [
-        "2022-08-08"
-      ],
+      "date": "2022-08-08",
       "methodology": "Waterfall"
     },
     {
@@ -46,9 +42,7 @@
         "Corey Lowe"
       ],
       "scrumMaster": "Kyra Donavon",
-      "date": [
-        "2022-08-08"
-      ],
+      "date": "2022-08-08",
       "methodology": "Waterfall"
     },
     {
@@ -63,9 +57,7 @@
         "Lorelai Gilmore"
       ],
       "scrumMaster": "Tony Bradshaw",
-      "date": [
-        "2022-09-08"
-      ],
+      "date": "2022-09-08",
       "methodology": "Agile"
     },
     {
@@ -80,9 +72,7 @@
         "Sienna Moe"
       ],
       "scrumMaster": "Tony Bradshaw",
-      "date": [
-        "2021-11-11"
-      ],
+      "date": "2021-11-11",
       "methodology": "Waterfall"
     },
     {
@@ -97,9 +87,7 @@
         "Corey Lowe"
       ],
       "scrumMaster": "Ellen Kaler",
-      "date": [
-        "2019-10-11"
-      ],
+      "date": "2019-10-11",
       "methodology": "Agile"
     },
     {
@@ -114,9 +102,7 @@
         "Padma Loka"
       ],
       "scrumMaster": "Tony Bradshaw",
-      "date": [
-        "2022-08-08"
-      ],
+      "date": "2022-08-08",
       "methodology": "Agile"
     },
     {
@@ -165,9 +151,7 @@
         "Padma Loka"
       ],
       "scrumMaster": "Kyra Donavon",
-      "date": [
-        "2022-08-21"
-      ],
+      "date": "2022-08-21",
       "methodology": "Agile"
     },
     {
@@ -182,9 +166,7 @@
         "Sienna Moe"
       ],
       "scrumMaster": "Tony Bradshaw",
-      "date": [
-        "2022-08-08"
-      ],
+      "date": "2022-08-08",
       "methodology": "Waterfall"
     },
     {
@@ -199,9 +181,7 @@
         "Corey Lowe"
       ],
       "scrumMaster": "Ellen Kaler",
-      "date": [
-        "2022-08-08"
-      ],
+      "date": "2022-08-08",
       "methodology": "Agile"
     },
     {
@@ -216,9 +196,7 @@
         "Padma Loka"
       ],
       "scrumMaster": "Ellen Kaler",
-      "date": [
-        "2022-08-08"
-      ],
+      "date": "2022-08-08",
       "methodology": "Agile"
     },
     {
@@ -233,9 +211,7 @@
         "Sienna Moe"
       ],
       "scrumMaster": "Tony Bradshaw",
-      "date": [
-        "2022-08-08"
-      ],
+      "date": "2022-08-08",
       "methodology": "Waterfall"
     },
     {
@@ -250,9 +226,7 @@
         "Corey Lowe"
       ],
       "scrumMaster": "Ellen Kaler",
-      "date": [
-        "2022-08-08"
-      ],
+      "date": "2022-08-08",
       "methodology": "Agile"
     },
     {
@@ -267,9 +241,7 @@
         "Padma Loka"
       ],
       "scrumMaster": "Tony Bradshaw",
-      "date": [
-        "2021-11-11"
-      ],
+      "date": "2021-11-11",
       "methodology": "Waterfall"
     },
     {
@@ -284,9 +256,7 @@
         "Sienna Moe"
       ],
       "scrumMaster": "Ellen Kaler",
-      "date": [
-        "2022-08-08"
-      ],
+      "date": "2022-08-08",
       "methodology": "Waterfall"
     },
     {
@@ -301,9 +271,7 @@
         "Corey Lowe"
       ],
       "scrumMaster": "Kyra Donavon",
-      "date": [
-        "2022-09-24"
-      ],
+      "date": "2022-09-24",
       "methodology": "Waterfall"
     },
     {
@@ -318,9 +286,7 @@
         "Laurie Gilmore"
       ],
       "scrumMaster": "Tony Bradshaw",
-      "date": [
-        "2019-10-11"
-      ],
+      "date": "2019-10-11",
       "methodology": "Agile"
     },
     {
@@ -335,9 +301,7 @@
         "Sienna Moe"
       ],
       "scrumMaster": "Tony Bradshaw",
-      "date": [
-        "2022-06-28"
-      ],
+      "date": "2022-06-28",
       "methodology": "Waterfall"
     },
     {
@@ -352,9 +316,7 @@
         "Corey Lowe"
       ],
       "scrumMaster": "Ellen Kaler",
-      "date": [
-        "2022-05-02"
-      ],
+      "date": "2022-05-02",
       "methodology": "Waterfall"
     },
     {
@@ -369,9 +331,7 @@
         "Padma Loka"
       ],
       "scrumMaster": "Tony Bradshaw",
-      "date": [
-        "2023-02-23"
-      ],
+      "date": "2023-02-23",
       "methodology": "Agile"
     },
     {
@@ -386,9 +346,7 @@
         "Sienna Moe"
       ],
       "scrumMaster": "Kyra Donavon",
-      "date": [
-        "2023-01-08"
-      ],
+      "date": "2023-01-08",
       "methodology": "Waterfall"
     },
     {
@@ -403,9 +361,7 @@
         "Corey Lowe"
       ],
       "scrumMaster": "Ellen Kaler",
-      "date": [
-        "2022-08-08"
-      ],
+      "date": "2022-08-08",
       "methodology": "Waterfall"
     },
     {
@@ -420,9 +376,7 @@
         "Padma Loka"
       ],
       "scrumMaster": "Kyra Donavon",
-      "date": [
-        "2022-08-08"
-      ],
+      "date": "2022-08-08",
       "methodology": "Agile"
     },
     {
@@ -437,9 +391,7 @@
         "Sienna Moe"
       ],
       "scrumMaster": "Tony Bradshaw",
-      "date": [
-        "2021-11-11"
-      ],
+      "date": "2021-11-11",
       "methodology": "Agile"
     },
     {
@@ -454,9 +406,7 @@
         "Corey Lowe"
       ],
       "scrumMaster": "Ellen Kaler",
-      "date": [
-        "2022-08-08"
-      ],
+      "date": "2022-08-08",
       "methodology": "Agile"
     },
     {
@@ -471,9 +421,7 @@
         "Padma Loka"
       ],
       "scrumMaster": "Ellen Kaler",
-      "date": [
-        "2021-11-11"
-      ],
+      "date": "2021-11-11",
       "methodology": "Agile"
     },
     {
@@ -488,9 +436,7 @@
         "Sienna Moe"
       ],
       "scrumMaster": "Tony Bradshaw",
-      "date": [
-        "2019-10-11"
-      ],
+      "date": "2022-11-08",
       "methodology": "Agile"
     },
     {
@@ -505,9 +451,7 @@
         "Corey Lowe"
       ],
       "scrumMaster": "Ellen Kaler",
-      "date": [
-        "2022-08-08"
-      ],
+      "date": "2022-05-08",
       "methodology": "Agile"
     },
     {
@@ -522,9 +466,7 @@
         "Padma Loka"
       ],
       "scrumMaster": "Tony Bradshaw",
-      "date": [
-        "2022-08-08"
-      ],
+      "date": "2022-06-08",
       "methodology": "Agile"
     },
     {
@@ -539,9 +481,7 @@
         "Sienna Moe"
       ],
       "scrumMaster": "Ellen Kaler",
-      "date": [
-        "2022-08-08"
-      ],
+      "date": "2022-07-08",
       "methodology": "Waterfall"
     },
     {
@@ -556,9 +496,7 @@
         "Corey Lowe"
       ],
       "scrumMaster": "Kyra Donavon",
-      "date": [
-        "2022-08-08"
-      ],
+      "date": "2022-09-08",
       "methodology": "Agile"
     },
     {
@@ -573,9 +511,7 @@
         "Lorelai Gilmore"
       ],
       "scrumMaster": "Tony Bradshaw",
-      "date": [
-        "2022-08-08"
-      ],
+      "date": "2022-08-08",
       "methodology": "Agile"
     },
     {
@@ -590,9 +526,7 @@
         "Sienna Moe"
       ],
       "scrumMaster": "Tony Bradshaw",
-      "date": [
-        "2022-08-08"
-      ],
+      "date": "2022-08-08",
       "methodology": "Waterfall"
     },
     {
@@ -607,9 +541,7 @@
         "Corey Lowe"
       ],
       "scrumMaster": "Ellen Kaler",
-      "date": [
-        "2019-10-11"
-      ],
+      "date": "2022-08-08",
       "methodology": "Agile"
     },
     {
@@ -624,9 +556,7 @@
         "Padma Loka"
       ],
       "scrumMaster": "Tony Bradshaw",
-      "date": [
-        "2022-08-08"
-      ],
+      "date": "2022-08-08",
       "methodology": "Agile"
     },
     {
@@ -641,50 +571,38 @@
         "Sienna Moe"
       ],
       "scrumMaster": "Kyra Donavon",
-      "date": [
-        "2022-08-08"
-      ],
+      "date": "2022-08-08",
       "methodology": "Waterfall"
     },
     {
       "id": 39,
-      "name": "Alpha II",
-      "owner": "Molly Myler",
+      "name": "Abraham Gerard",
+      "owner": "Amber Schindler",
       "developers": [
-        "Rory Lane",
-        "Lorelai Gilmore",
-        "Lizzo Gowen",
-        "Jerry Menak",
-        "Corey Lowe"
+        "Tori Collen",
+        "Joe Black",
+        "Gordan Lewitt",
+        "Harvey Welmer",
+        "Borma Sorma"
       ],
-      "scrumMaster": "Ellen Kaler",
-      "date": [
-        "2022-08-08"
-      ],
+      "scrumMaster": "Tony Bradshaw",
+      "date": "2022-08-08",
       "methodology": "Agile"
     },
     {
       "id": 40,
-      "name": "Jedi",
-      "owner": "Sarah Hill",
+      "name": "Parser",
+      "owner": "Amber Schindler",
       "developers": [
-        "Jackson Wang",
-        "Aiden Kane",
-        "Jerry Nguyen",
-        "Lorelai Gilmore",
-        "Padma Loka"
+        "Tori Collen",
+        "Joe Black",
+        "Gordan Lewitt",
+        "Harvey Welmer",
+        "Borma Sorma"
       ],
-      "scrumMaster": "Kyra Donavon",
-      "date": [
-        "2021-11-11"
-      ],
+      "scrumMaster": "Tony Bradshaw",
+      "date": "2022-08-08",
       "methodology": "Agile"
-    },
-    {
-      "id": 41
-    },
-    {
-      "id": 43
     }
   ]
 }

@@ -10,22 +10,22 @@ const initialState = {
   owner: "",
   developers:[],
   scrumMaster:"",
-  date:[],
+  date:"",
   methodology:"",
 };
 
 const Edit = () => {
   const [state, setState] = useState(initialState)
-  const {name, owner, developers, scrumMaster, date, methodology} = state
+  // const {name, owner, developers, scrumMaster, date, methodology} = state
   const navigate = useNavigate()
   const {id} = useParams();
   const [item, setItem] = useState({});
 
-  useEffect(() => {
-    if (id) {
-    getSingleUser(id);
-    }
-  }, [id])
+  // useEffect(() => {
+  //   if (id) {
+  //   getSingleUser(id);
+  //   }
+  // }, [id])
 
   //read the data
   useEffect(() => {
@@ -38,34 +38,33 @@ const Edit = () => {
   }, [id]);
 
 
-const getSingleUser = async (id) => {
-  const response = await axios.get(`http://localhost:3000/user/${id}`);
-  if(response.status === 200) {
-    setState({...response.data[0]})
-  }
-}; 
+// const getSingleUser = async (id) => {
+//   const response = await axios.get('http://localhost:3000/api/users');
+//   if(response.status === 200) {
+//     setState({...response.data[0]})
+//   }
+// }; 
 
 //update data
 const updateUser = async (data, id) => {
   const response = await axios.put(`http://localhost:3000/api/users/${id}`, data);
   if(response.status === 200) {
     toast.success(response.data);
+    setState({...response.data[0]})
   }
 };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     await axios.put(`http://localhost:3000/api/users/${id}`, item);
-    if(!name || !owner || !developers || !scrumMaster || !date || !methodology){
-      toast.error("Missing Value!")
-    } else {
-       if (!id) {
+    if (!id) {
             updateUser(state);
        } 
     setTimeout(() =>navigate(`/`), 500);
-    }
-
+    
   }
+
+ 
 
   const handleInputChange = (e) => {
     let {name, value} = e.target;
@@ -93,6 +92,7 @@ const updateUser = async (data, id) => {
         type="text" 
         id="name" 
         name="name" 
+        required
         placeholder='Enter Product Name' 
         onChange={handleInputChange} 
         value={item.name}
@@ -101,7 +101,8 @@ const updateUser = async (data, id) => {
         <input 
         type="text" 
         id="owner" 
-        name="owner" 
+        name="owner"
+        required 
         placeholder='Enter Product Owner' 
         onChange={handleInputChange} 
         value={item.owner}
@@ -110,7 +111,8 @@ const updateUser = async (data, id) => {
         <input 
         type="text" 
         id="developers" 
-        name="developers" 
+        name="developers"
+        required 
         placeholder='Enter Developers' 
         onChange={handleInputChange} 
         value={item.developers}
@@ -119,7 +121,8 @@ const updateUser = async (data, id) => {
         <input 
         type="text" 
         id="scrumMaster" 
-        name="scrumMaster" 
+        name="scrumMaster"
+        required 
         placeholder='Enter Scrum Master' 
         onChange={handleInputChange} 
         value={item.scrumMaster}
@@ -129,6 +132,7 @@ const updateUser = async (data, id) => {
       type="date" 
       id="date" 
       name="date" 
+      required
       className='bg-slate-300 pointer-events-none'
       placeholder='Enter Start Date' 
       value={item.date}
@@ -137,6 +141,7 @@ const updateUser = async (data, id) => {
       <select
       id="methodology"
       name="methodology"
+      required
       value={item.methodology}
       onChange={handleInputChange}>
       <option value="">Choose Methodology</option>

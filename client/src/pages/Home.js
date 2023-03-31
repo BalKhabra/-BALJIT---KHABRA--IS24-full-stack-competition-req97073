@@ -7,11 +7,21 @@ import axios from "axios";
 const Home = () => {
   const [search, setSearch] = useState("");
   const [data, setData] = useState(null);
+  const [filteredData, setFilteredData] = useState([]);
 
   console.log(search)
   //search bar
   const handleSearch = (event) => {
     setSearch(event.target.value);
+    const filtered = data.filter((item) => {
+      return (
+        (item.scrumMaster &&
+          item.scrumMaster.toLowerCase().includes(event.target.value.toLowerCase())) ||
+        (Array.isArray(item.developers) &&
+          item.developers.join().toLowerCase().includes(event.target.value.toLowerCase()))
+      );
+    });
+    setFilteredData(filtered);
   };
 
 
@@ -22,10 +32,8 @@ const Home = () => {
     setData(response.data);
     }
   }
-    
-  // console.log("data=>", data);
 
-//update users
+//fetch users
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch("http://localhost:3000/api/users");
@@ -34,6 +42,8 @@ const Home = () => {
     };
     fetchData();
   }, []);
+
+
 
 
   useEffect(() => {
@@ -52,6 +62,11 @@ const Home = () => {
     }
     }
   };
+
+
+  //search filter
+
+  
 //form
   return (
     <div style= {{marginTop: "50px"}}>
@@ -65,6 +80,7 @@ const Home = () => {
     value={search} 
     onChange={handleSearch} />
     </form>
+    <p>{filteredData.length} results found</p>
       <table className="styled-table table-striped-rows">
       <thead>
           <tr>
@@ -80,29 +96,27 @@ const Home = () => {
         </thead>
         <tbody>
 
+        {Array.isArray(data) && data.filter((item) => {
+  return search && search.toLowerCase() === '' ? item : (item.scrumMaster && item.scrumMaster.toLowerCase().includes(search.toLowerCase())) || 
+  (Array.isArray(item.developers) && item.developers.join().toLowerCase().includes(search.toLowerCase()))
+}).map((item) => (
+  <tr key={item.id}>
+    <td>{item.id}</td>
+    <td>{item.name}</td>
+    <td>{item.owner}</td>
+    <td>{Array.isArray(item.developers) ? item.developers.join(', ') : item.developers}</td>
+    <td>{item.scrumMaster}</td>
+    <td>{item.date}</td>
+    <td>{item.methodology}</td>
+    <td>{item.action}
+      <Link to={`/edit/${item.id}`}>
+        <button className="btn btn-edit">Edit</button>
+      </Link>
+      <button className="btn btn-delete" onClick={() => onDeleteUser(item.id)}>Delete</button>
+    </td>
+  </tr>
+))}
 
-        {data && data.filter((item) => {
-
-      return search && search.toLowerCase() === '' ? item : (item.scrumMaster && item.scrumMaster.toLowerCase().includes(search.toLowerCase())) || 
-      (Array.isArray(item.developers) && item.developers.join().toLowerCase().includes(search.toLowerCase()))
-
-    }).map((item) => (
-            <tr key={item.id}>
-              <td>{item.id}</td>
-              <td>{item.name}</td>
-              <td>{item.owner}</td>
-              <td>{Array.isArray(item.developers) ? item.developers.join(', ') : item.developers}</td>
-              <td>{item.scrumMaster}</td>
-              <td>{item.date}</td>
-              <td>{item.methodology}</td>
-              <td>{item.action}
-              <Link to={`/edit/${item.id}`}>
-                    <button className="btn btn-edit">Edit</button>
-                  </Link>
-                  <button className="btn btn-delete" onClick={() => onDeleteUser(item.id)}>Delete</button>
-                  </td>
-            </tr>
-          ))}
         </tbody>
       </table>
     </div>
@@ -110,8 +124,3 @@ const Home = () => {
 }
 
 export default Home;
-
-
-
-
-
