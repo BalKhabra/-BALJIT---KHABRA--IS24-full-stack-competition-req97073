@@ -21,11 +21,6 @@ const Edit = () => {
   const {id} = useParams();
   const [item, setItem] = useState({});
 
-  // useEffect(() => {
-  //   if (id) {
-  //   getSingleUser(id);
-  //   }
-  // }, [id])
 
   //read the data
   useEffect(() => {
@@ -36,14 +31,6 @@ const Edit = () => {
     };
     fetchItem();
   }, [id]);
-
-
-// const getSingleUser = async (id) => {
-//   const response = await axios.get('http://localhost:3000/api/users');
-//   if(response.status === 200) {
-//     setState({...response.data[0]})
-//   }
-// }; 
 
 //update data
 const updateUser = async (data, id) => {
@@ -94,7 +81,7 @@ const updateUser = async (data, id) => {
         name="name" 
         required
         placeholder='Enter Product Name' 
-        onChange={handleInputChange} 
+        onChange={(e) => handleInputChange(e)} 
         value={item.name}
         />
 
@@ -104,7 +91,7 @@ const updateUser = async (data, id) => {
         name="owner"
         required 
         placeholder='Enter Product Owner' 
-        onChange={handleInputChange} 
+        onChange={(e) => handleInputChange(e)} 
         value={item.owner}
         />
 
@@ -114,7 +101,7 @@ const updateUser = async (data, id) => {
         name="developers"
         required 
         placeholder='Enter Developers' 
-        onChange={handleInputChange} 
+        onChange={(e) => handleInputChange(e)} 
         value={item.developers}
         />
 
@@ -124,7 +111,7 @@ const updateUser = async (data, id) => {
         name="scrumMaster"
         required 
         placeholder='Enter Scrum Master' 
-        onChange={handleInputChange} 
+        onChange={(e) => handleInputChange(e)} 
         value={item.scrumMaster}
         />
 
@@ -143,7 +130,7 @@ const updateUser = async (data, id) => {
       name="methodology"
       required
       value={item.methodology}
-      onChange={handleInputChange}>
+      onChange={(e) => handleInputChange(e)}>
       <option value="">Choose Methodology</option>
       <option value="Agile"> Agile </option>
       <option value="Waterfall">Waterfall</option>

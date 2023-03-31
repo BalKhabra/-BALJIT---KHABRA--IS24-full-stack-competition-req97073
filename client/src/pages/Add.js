@@ -34,6 +34,8 @@ useEffect(() => {
   if (id) {
   getSingleUser(id);
   }
+
+  
 }, [id])
 
 const getSingleUser = async (id) => {
